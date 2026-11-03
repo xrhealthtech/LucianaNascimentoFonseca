@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços & Consultoria | Dr. Tulio Brandão Xavier-Rocha</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #142238;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #f97316;
+      --accent-glow: rgba(249, 115, 22, 0.25);
+      --text: #ffffff;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 20px 16px 60px 16px; }
+    .container { max-width: 680px; margin: 0 auto; }
+
+    .nav-back { display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 10px; font-weight: 500; }
+    .nav-back:hover { color: var(--text); }
+
+    header { padding: 20px 0 24px; text-align: center; }
+    .logo-badge { display: inline-block; background: rgba(249, 115, 22, 0.1); color: var(--accent); font-weight: 700; font-size: 0.8rem; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; border: 1px solid rgba(249, 115, 22, 0.3); }
+    h1 { font-size: 1.8rem; line-height: 1.25; margin-bottom: 12px; font-weight: 800; }
+    header p { color: var(--text-muted); font-size: 1rem; }
+
+    /* Card Destaque: Bio-X */
+    .biox-card {
+      background: linear-gradient(145deg, #182d4d 0%, #102138 100%);
+      border: 2px solid var(--accent);
+      border-radius: 20px;
+      padding: 30px 24px;
+      margin-bottom: 36px;
+      box-shadow: 0 12px 30px var(--accent-glow);
+    }
+    .biox-tag { color: var(--accent); font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .biox-card h2 { font-size: 1.5rem; margin: 8px 0 12px; font-weight: 800; }
+    .biox-card p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 16px; }
+    .deliverables { list-style: none; margin-bottom: 24px; }
+    .deliverables li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.9rem; color: #f1f5f9; }
+    .deliverables li span { color: var(--accent); font-weight: bold; }
+
+    /* Botão Primário */
+    .btn-cta {
+      display: block;
+      text-align: center;
+      background-color: var(--accent);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    .btn-cta:active { opacity: 0.85; }
+
+    /* Lista de Outros Serviços */
+    .section-title { font-size: 1.25rem; font-weight: 700; margin: 30px 0 16px; border-bottom: 1px solid var(--card-border); padding-bottom: 8px; }
+    .service-grid { display: flex; flex-direction: column; gap: 16px; }
+    .service-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .service-item h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .service-target { font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+    .service-item p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px; }
+    .service-link { font-size: 0.85rem; color: #fff; text-decoration: none; font-weight: 600; }
+    .service-link:hover { text-decoration: underline; }
+
+    /* Bio / Autoridade */
+    .bio {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 36px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .bio strong { color: #fff; }
+    .bio a { color: var(--accent); text-decoration: none; }
+    .bio a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="nav-back">← Voltar ao cartão</a>
+
+    <header>
+      <div class="logo-badge">CONSULTORIA TÉCNICO-CIENTÍFICA</div>
+      <h1>Dr. Tulio Brandão Xavier-Rocha</h1>
+      <p>Biomecânica, neurofisiologia e engenharia aplicadas ao movimento humano.</p>
+    </header>
+
+    <!-- PRODUTO PRINCIPAL: BIO-X -->
+    <section class="biox-card">
+      <span class="biox-tag">Análise Neurobiomecânica Integrada</span>
+      <h2>Bio-X: Prevenção & Performance</h2>
+      <p>Desenvolvida para praticantes de musculação e treinamento de força que enfrentam dores refratárias, histórico de lesões ou travamentos no rendimento mecânico.</p>
+      <p>Análise do controle motor e das forças mecânicas aplicadas ao exercício — para eliminar dores persistentes, prevenir lesões e otimizar o rendimento.</p>
+      
+      <ul class="deliverables">
+        <li><span>✓</span> <strong>Diagnóstico cinesiológico dinâmico:</strong> Análise de alavanca e vetores de força durante os exercícios.</li>
+        <li><span>✓</span> <strong>Identificação de falhas de controle motor:</strong> Mapeamento de sobrecargas teciduais e assimetrias no movimento.</li>
+        <li><span>✓</span> <strong>Diretrizes práticas de reprogramação:</strong> Ajustes de set-up mecânico e estratégias corretivas personalizadas.</li>
+      </ul>
+
+      <a class="btn-cta" href="https://wa.me/5538999343321?text=Olá,%20Dr.%20Tulio.%20Gostaria%20de%20saber%20mais%20sobre%20o%20agendamento%20da%20Avaliação%20Bio-X." target="_blank" rel="noopener">
+        Agendar Avaliação Bio-X no WhatsApp
+      </a>
+    </section>
+
+    <!-- DEMAIS SERVIÇOS -->
+    <h2 class="section-title">Outras Áreas de Atuação</h2>
+    
+    <div class="service-grid">
+      <!-- Mentoria -->
+      <div class="service-item">
+        <h3>Mentoria & Supervisão Clínica</h3>
+        <div class="service-target">Para fisioterapeutas, médicos e treinadores</div>
+        <p>Discussão estruturada de casos clínicos complexos, aprofundamento em diagnóstico cinesiológico funcional e alinhamento de condutas baseadas em controle motor.</p>
+        <a class="service-link" href="https://wa.me/5538999343321?text=Olá,%20Dr.%20Tulio.%20Tenho%20interesse%20na%20mentoria%20clínica." target="_blank" rel="noopener">Consultar vagas de mentoria →</a>
+      </div>
+
+      <!-- P&D -->
+      <div class="service-item">
+        <h3>Pesquisa & Desenvolvimento (P&D)</h3>
+        <div class="service-target">Para empresas de tecnologia biomédica e fabricantes</div>
+        <p>Pareceres técnicos, modelagem mecânica e validação funcional de dispositivos ortopédicos, máquinas de musculação e sistemas de reabilitação.</p>
+        <a class="service-link" href="https://wa.me/5538999343321?text=Olá,%20Dr.%20Tulio.%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20P%26D." target="_blank" rel="noopener">Solicitar proposta técnica →</a>
+      </div>
+
+      <!-- Treinamentos -->
+      <div class="service-item">
+        <h3>Treinamentos & Palestras</h3>
+        <div class="service-target">Para equipes clínicas, instituições e congressos</div>
+        <p>Cursos e imersões práticas sobre epistemologia neuromiofascial e biomecânica do movimento humano, integrando física básica e neurofisiologia sem dogmas.</p>
+        <a class="service-link" href="https://wa.me/5538999343321?text=Olá,%20Dr.%20Tulio.%20Gostaria%20de%20orçamento%20para%20curso/palestra." target="_blank" rel="noopener">Ver temas e disponibilidade →</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
