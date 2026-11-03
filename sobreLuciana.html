@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Profissional & Acadêmico</title>
+  <style>
+    :root {
+      --bg: #021a08;
+      --card-bg: #804a4e;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #f9bc16;
+      --accent-glow: rgba(249, 115, 22, 0.25);
+      --text: #ffffff;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 20px 16px 60px 16px; }
+    .container { max-width: 680px; margin: 0 auto; }
+
+    .nav-back { display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 10px; font-weight: 500; }
+    .nav-back:hover { color: var(--text); }
+
+    header { padding: 20px 0 24px; text-align: center; }
+    .logo-badge { display: inline-block; background: rgba(249, 115, 22, 0.1); color: var(--accent); font-weight: 700; font-size: 0.8rem; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; border: 1px solid rgba(249, 115, 22, 0.3); }
+    h1 { font-size: 1.8rem; line-height: 1.25; margin-bottom: 12px; font-weight: 800; }
+    header p { color: var(--text-muted); font-size: 1rem; }
+
+    /* Seções em Lista */
+    .section-title { font-size: 1.25rem; font-weight: 700; margin: 28px 0 14px; border-bottom: 1px solid var(--card-border); padding-bottom: 8px; color: var(--text); }
+    
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .info-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .info-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: #cbd5e1; }
+    .info-list li span { color: var(--accent); font-weight: bold; line-height: 1.4; }
+
+    /* Botão Primário */
+    .btn-cta {
+      display: block;
+      text-align: center;
+      background-color: var(--accent);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-top: 24px;
+      transition: opacity 0.2s;
+    }
+    .btn-cta:active { opacity: 0.85; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="nav-back">← Voltar aos Serviços</a>
+
+    <header>
+      <div class="logo-badge">CURRÍCULO & TRAJETÓRIA</div>
+      <h1>Dra. Luciana Nascimento Fonseca</h1>
+    </header>
+
+    <!-- FORMACAO ACADEMICA -->
+    <h2 class="section-title">Formação & Titulações</h2>
+    <div class="info-card">
+      <ul class="info-list">
+        <li><span>•</span> Fisioterapeuta</li>
+        <li><span>•</span> Especialista em Fisioterapia Pélvica</li>
+        <li><span>•</span> Especialista em Saúde da Mulher</li>
+        <li><span>•</span> Professor universitário com mais de 20 anos de experiência.</li>
+        <li><span>•</span> Orientador de estágio em Fisioterapia.</li>
+      </ul>
+    </div>
+
+    <!-- RECONHECIMENTO & ESPECIALIDADES -->
+    <h2 class="section-title">Especialidades & Produção</h2>
+    <div class="info-card">
+      <ul class="info-list">
+        <li><span>•</span> Ensino e aplicação de raciocínio clínico e biomecânica aplicada para avaliação, performance e tratamento.</li>
+        <li><span>•</span> Desenvolvimento de modelos conceituais para análise do movimento humano.</li>
+        <li><span>•</span> Consultoria técnico-científica em controle motor e biomecânica aplicadas ao exercício resistido.</li>
+      </ul>
+    </div>
+
+    <!-- LINK EXTERNO OPCIONAL -->
+    <a class="btn-cta" href="http://lattes.cnpq.br/0791553640600604" target="_blank" rel="noopener">
+      Ver Currículo Lattes Completo (CNPq) ↗
+    </a>
+  </div>
+
+</body>
+</html>
